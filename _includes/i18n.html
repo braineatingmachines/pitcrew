@@ -1,0 +1,33 @@
+{% comment %}
+  i18n Helper Include
+
+  Usage: {% include i18n.html key="nav.home" %}
+
+  This include retrieves translated strings from _data/i18n/{lang}.yml
+  Falls back to English if translation is not found.
+{% endcomment %}
+
+{%- assign lang = site.lang | default: "en" -%}
+{%- assign keys = include.key | split: "." -%}
+{%- assign fallback = include.fallback | default: include.key -%}
+
+{%- comment %} Get the translation from the current language {% endcomment -%}
+{%- assign translation = site.data.i18n[lang] -%}
+{%- for key in keys -%}
+  {%- if translation -%}
+    {%- assign translation = translation[key] -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment %} Fall back to English if not found {% endcomment -%}
+{%- unless translation -%}
+  {%- assign translation = site.data.i18n.en -%}
+  {%- for key in keys -%}
+    {%- if translation -%}
+      {%- assign translation = translation[key] -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endunless -%}
+
+{%- comment %} Output the translation or fallback {% endcomment -%}
+{{ translation | default: fallback -}}

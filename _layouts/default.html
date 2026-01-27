@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="{{ site.lang | default: 'en' }}" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +27,7 @@
   </script>
 </head>
 <body class="bg-[var(--color-background)] text-[var(--color-text)] min-h-screen flex flex-col">
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link">{% include i18n.html key="nav.skip_to_content" %}</a>
 
   {% include navigation.html %}
 

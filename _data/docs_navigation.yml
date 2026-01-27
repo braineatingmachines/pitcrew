@@ -29,6 +29,11 @@
     - title: Outreach Guide
       url: /docs/outreach/
 
+- title: Configuration
+  items:
+    - title: Internationalization (i18n)
+      url: /docs/i18n/
+
 - title: Resources
   items:
     - title: Useful Links

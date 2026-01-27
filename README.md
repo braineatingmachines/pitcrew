@@ -2,6 +2,8 @@
 
 A free, open-source website template for robotics teams. Get your team's professional portfolio website up and running in minutes — no coding experience required.
 
+> **Deploying a specific branch on GitHub Pages:** Go to your repository **Settings** → **Pages** → under "Build and deployment", select **Source: GitHub Actions**. Then edit your `.github/workflows/jekyll.yml` file and change `branches: ["main"]` to your desired branch (e.g., `branches: ["i18n"]`). Commit and push — your site will deploy from that branch.
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Jekyll](https://img.shields.io/badge/jekyll-4.3+-red.svg)
 ![Tailwind](https://img.shields.io/badge/tailwind-3.4+-38bdf8.svg)
@@ -41,6 +43,7 @@ PitCrew is a ready-to-use website template designed specifically for competitive
 | **Search** | Find content across your entire site |
 | **Auto-Deploy** | Push changes and your site updates automatically |
 | **Alumni Archive** | Automatically moves graduated members to alumni page |
+| **Internationalization (i18n)** | Support for multiple languages (EN, FR, DE, ES, ZH, JA) |
 
 ---
 
@@ -456,14 +459,15 @@ Here's what each folder contains:
 
 ```
 pitcrew/
-├── _config.yml           # ⭐ Main settings (team name, socials, etc.)
+├── _config.yml           # ⭐ Main settings (team name, socials, lang, etc.)
 ├── _data/                # ⭐ Your content data
 │   ├── team.yml          #    Team member info
 │   ├── mentors.yml       #    Mentor info
 │   ├── alumni.yml        #    Graduated members
 │   ├── sponsors.yml      #    Sponsor info
 │   ├── awards.yml        #    Awards won
-│   └── events.yml        #    Upcoming events
+│   ├── events.yml        #    Upcoming events
+│   └── i18n/             #    Translation files (en.yml, fr.yml, etc.)
 ├── _posts/               # ⭐ Blog posts
 ├── _layouts/             #    Page templates (don't edit unless customizing)
 ├── _includes/            #    Reusable components
@@ -532,6 +536,35 @@ features:
   circuit_viewer: false
   search: true
 ```
+
+### Internationalization (i18n)
+
+PitCrew supports multiple languages. To change your site's language:
+
+1. Edit `_config.yml`:
+
+```yaml
+# Supported languages: en, fr, de, es, zh, ja
+lang: "fr"  # French
+```
+
+**Supported Languages:**
+| Code | Language |
+|------|----------|
+| `en` | English (default) |
+| `fr` | French |
+| `de` | German |
+| `es` | Spanish |
+| `zh` | Chinese (Simplified) |
+| `ja` | Japanese |
+
+**Adding a New Language:**
+
+1. Copy `_data/i18n/en.yml` to `_data/i18n/{your-code}.yml`
+2. Translate all the strings in the new file
+3. Set `lang: "{your-code}"` in `_config.yml`
+
+See the [i18n Documentation](/docs/i18n/) for detailed instructions.
 
 ---
 

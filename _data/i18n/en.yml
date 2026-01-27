@@ -1,0 +1,268 @@
+# English (Default) - en.yml
+# PitCrew i18n Translation File
+
+# Navigation
+nav:
+  home: "Home"
+  about: "About"
+  season: "Season"
+  awards: "Awards"
+  sponsors: "Sponsors"
+  docs: "Docs"
+  news: "News"
+  menu: "Menu"
+  skip_to_content: "Skip to main content"
+
+# Accessibility
+accessibility:
+  toggle_dark_mode: "Toggle dark mode"
+  toggle_accessibility: "Toggle accessibility mode"
+  open_menu: "Open menu"
+  close_menu: "Close menu"
+  options: "Accessibility Options"
+  high_contrast: "High Contrast"
+  reduce_motion: "Reduce Motion"
+  large_text: "Large Text"
+
+# Footer
+footer:
+  quick_links: "Quick Links"
+  about_us: "About Us"
+  current_season: "Current Season"
+  contact: "Contact"
+  documentation: "Documentation"
+  connect: "Connect"
+  support_our_team: "Support Our Team"
+  all_rights_reserved: "All rights reserved."
+  powered_by: "Powered by"
+  built_by: "Built by"
+
+# Social Links (aria-labels)
+social:
+  instagram: "Instagram"
+  github: "GitHub"
+  youtube: "YouTube"
+  twitter: "Twitter/X"
+  email: "Email"
+
+# Hero & Home Page
+home:
+  current_season: "Current Season"
+  follow_journey: "Follow our journey through the"
+  season_suffix: "season"
+  meet_the_team: "Meet the Team"
+  our_robot: "Our Robot"
+  robot_desc: "See our robot design and capabilities"
+  the_team: "The Team"
+  team_desc: "Meet our talented team members"
+  outreach: "Outreach"
+  outreach_desc: "Our community impact initiatives"
+  awards_recognition: "Awards & Recognition"
+  awards_desc: "Celebrating our team's achievements"
+  view_all_awards: "View All Awards"
+  upcoming_events: "Upcoming Events"
+  events_desc: "Join us at these upcoming competitions and events"
+  our_sponsors: "Our Sponsors"
+  sponsors_desc: "Thank you to our generous sponsors who make our work possible"
+  become_sponsor: "Become a Sponsor"
+  join_our_team: "Join Our Team"
+  join_desc: "Interested in robotics, engineering, programming, or business? We're always looking for passionate students to join our team."
+  learn_more: "Learn More"
+  contact_us: "Contact Us"
+
+# Events
+events:
+  competition: "Competition"
+  outreach: "Outreach"
+  event: "Event"
+  view_all: "View All Events"
+  upcoming: "Upcoming Events"
+  events_intro: "Join us at competitions, outreach events, and community activities."
+  learn_more: "Learn more"
+
+# Sponsors
+sponsors:
+  platinum: "Platinum Sponsors"
+  gold: "Gold Sponsors"
+  silver: "Silver Sponsors"
+  bronze: "Bronze Sponsors"
+  view_all: "View All Sponsors"
+  become: "Become a Sponsor"
+  helps_us: "Your sponsorship helps us"
+  purchase_materials: "Purchase materials"
+  register_competitions: "Register for competitions"
+  travel_events: "Travel to events"
+  conduct_outreach: "Conduct outreach"
+  provide_meals: "Provide meals"
+  tiers: "Sponsorship Tiers"
+  in_kind: "In-Kind Donations"
+  tax_deductibility: "Tax Deductibility"
+  contact_team: "Contact Our Team"
+
+# Navigation & Pagination
+pagination:
+  back_to_news: "Back to News"
+  previous: "Previous"
+  next: "Next"
+  on_this_page: "On this page"
+  read_more: "Read more"
+
+# Season Page
+season:
+  robot: "Robot"
+  team: "Team"
+  gallery: "Gallery"
+  code: "Code"
+  cad: "CAD"
+  browse_all: "Browse All Seasons"
+  current: "Current"
+  archive: "Archive"
+  game: "Game"
+
+# 3D/CAD Viewer
+viewer:
+  view_in_ar: "View in AR"
+  loading_3d: "Loading 3D model..."
+  drag_to_rotate: "Drag to rotate | Scroll to zoom"
+  cad_disabled: "3D CAD viewer is disabled. Enable it in _config.yml"
+  zoom_in: "Zoom in"
+  zoom_out: "Zoom out"
+  reset_view: "Reset view"
+  fullscreen: "View fullscreen"
+  download_schematic: "Download Schematic"
+  circuit_disabled: "Circuit viewer is disabled. Enable it in _config.yml"
+
+# Search & Empty States
+states:
+  no_results: "No results found for"
+  no_posts: "No posts yet. Check back soon!"
+  alumni_coming: "Alumni listing coming soon!"
+  email_coming: "Email coming soon"
+
+# Contact Page
+contact:
+  general_inquiries: "General Inquiries"
+  general_desc: "Questions about our team, joining, or general information."
+  email_us: "Email Us"
+  sponsorship: "Sponsorship"
+  sponsorship_desc: "Interested in supporting our team? We'd love to partner with you."
+  learn_sponsorship: "Learn About Sponsorship"
+  follow_us: "Follow Us"
+  follow_desc: "Stay connected and follow our journey through the season!"
+  visit_us: "Visit Us"
+  visit_desc: "We meet regularly at our school during the robotics season. If you'd like to visit and see what we do, please contact us to schedule a visit."
+  meeting_location: "Meeting Location"
+  meeting_times: "Meeting Times"
+  response_time: "We typically respond to inquiries within 48 hours during the school year."
+
+# Team/Members
+team:
+  grade: "Grade"
+  mentors: "Mentors"
+  current_members: "Current Members"
+  team_number: "Team Number"
+  team_members: "Team Members"
+  program: "Program"
+
+# Awards Page
+awards:
+  all: "All Awards"
+  season: "Season"
+  criteria: "Award Criteria"
+  first_core_values: "FIRST Core Values Awards"
+  inspire: "Inspire Award"
+  think: "Think Award"
+  connect: "Connect Award"
+  innovate: "Innovate Award"
+  control: "Control Award"
+  motivate: "Motivate Award"
+  design: "Design Award"
+
+# Alumni Page
+alumni:
+  where_now: "Where Are They Now?"
+  class_of: "Class of"
+  now: "Now"
+  stay_connected: "Stay Connected"
+  share_updates: "Share your career updates"
+  mentor_members: "Mentor current team members"
+  speak_events: "Speak at team events"
+  contribute_network: "Contribute to our alumni network"
+
+# Judge Mode
+judge:
+  note: "Note"
+  optimized_judges: "This page is optimized for competition judges."
+  print_page: "Print this page"
+  team_overview: "Team Overview"
+  robot_overview: "Robot Overview"
+  engineering_process: "Engineering Process"
+  design_philosophy: "Design Philosophy"
+  awards_history: "Awards History"
+  outreach_impact: "Outreach Impact"
+  team_culture: "Team Culture"
+  core_values: "Core Values"
+  sustainability: "Sustainability"
+
+# Handbook
+handbook:
+  toc: "Table of Contents"
+  team_mission: "Team Mission"
+  membership: "Membership Requirements"
+  team_structure: "Team Structure"
+  meeting_schedule: "Meeting Schedule"
+  safety: "Safety Guidelines"
+  communication: "Communication"
+  code_of_conduct: "Code of Conduct"
+  leadership: "Leadership"
+  subteams: "Subteams"
+  regular_season: "Regular Season"
+  build_season: "Build Season"
+  eligibility: "Eligibility"
+  expectations: "Expectations"
+  dues_fees: "Dues and Fees"
+  emergency: "Emergency Procedures"
+  primary_channels: "Primary Channels"
+  response_expectations: "Response Expectations"
+  respect: "Respect"
+  responsibility: "Responsibility"
+  integrity: "Integrity"
+  gracious_professionalism: "Gracious Professionalism"
+  consequences: "Consequences"
+  questions: "Questions?"
+
+# About Page
+about:
+  our_mission: "Our Mission"
+  team_history: "Team History"
+  our_team: "Our Team"
+  what_we_do: "What We Do"
+  competition_season: "Competition Season"
+  join_team: "Join Our Team"
+  requirements: "Requirements"
+  no_experience: "No prior experience necessary!"
+
+# News
+news:
+  description: "Stay up to date with our team's activities, competition results, and community events."
+  read_more: "Read more"
+
+# Docs
+docs:
+  documentation: "Documentation"
+
+# Common
+common:
+  and: "and"
+  or: "or"
+  loading: "Loading..."
+  error: "Error"
+  success: "Success"
+  cancel: "Cancel"
+  save: "Save"
+  close: "Close"
+  open: "Open"
+  view: "View"
+  download: "Download"
+  share: "Share"
+  print: "Print"

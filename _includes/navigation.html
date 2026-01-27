@@ -17,9 +17,10 @@
       <!-- Desktop Navigation -->
       <div class="hidden md:flex items-center gap-1">
         {% for item in site.navigation %}
+        {% assign nav_key = "nav." | append: item.key %}
         <a href="{{ item.url | relative_url }}"
            class="nav-link {% if page.url == item.url %}active{% endif %}">
-          {{ item.title }}
+          {% include i18n.html key=nav_key fallback=item.title %}
         </a>
         {% endfor %}
       </div>
@@ -30,7 +31,7 @@
         <button
           id="dark-mode-toggle"
           class="p-2 rounded-lg hover:bg-[var(--color-surface)] transition-colors"
-          aria-label="Toggle dark mode"
+          aria-label="{% include i18n.html key="accessibility.toggle_dark_mode" %}"
         >
           <svg class="h-5 w-5 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
@@ -45,7 +46,7 @@
         <button
           id="accessibility-toggle"
           class="p-2 rounded-lg hover:bg-[var(--color-surface)] transition-colors"
-          aria-label="Toggle accessibility mode"
+          aria-label="{% include i18n.html key="accessibility.toggle_accessibility" %}"
         >
           <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/>
@@ -58,7 +59,7 @@
         <button
           id="mobile-menu-button"
           class="md:hidden p-2 rounded-lg hover:bg-[var(--color-surface)] transition-colors"
-          aria-label="Open menu"
+          aria-label="{% include i18n.html key="accessibility.open_menu" %}"
           aria-expanded="false"
         >
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -80,11 +81,11 @@
     <!-- Drawer -->
     <div class="absolute right-0 top-0 h-full w-64 bg-[var(--color-background)] shadow-xl transform transition-transform">
       <div class="p-4 border-b border-[var(--color-border)] flex justify-between items-center">
-        <span class="font-bold">Menu</span>
+        <span class="font-bold">{% include i18n.html key="nav.menu" %}</span>
         <button
           id="mobile-menu-close"
           class="p-2 rounded-lg hover:bg-[var(--color-surface)]"
-          aria-label="Close menu"
+          aria-label="{% include i18n.html key="accessibility.close_menu" %}"
         >
           <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
@@ -94,9 +95,10 @@
 
       <nav class="p-4 space-y-2">
         {% for item in site.navigation %}
+        {% assign nav_key = "nav." | append: item.key %}
         <a href="{{ item.url | relative_url }}"
            class="block py-2 px-4 rounded-lg {% if page.url == item.url %}bg-primary/10 text-primary{% else %}hover:bg-[var(--color-surface)]{% endif %}">
-          {{ item.title }}
+          {% include i18n.html key=nav_key fallback=item.title %}
         </a>
         {% endfor %}
       </nav>

@@ -4,6 +4,11 @@ description: "https://github.com/braineatingmachines/pitcrew"
 url: ""
 baseurl: ""
 
+# Language / Internationalization (i18n)
+# Supported languages: en, fr, de, es, zh, ja
+# See _data/i18n/ for translation files
+lang: "de"
+
 # Team configuration
 site:
   team_name: "PitCrew"
@@ -36,20 +41,28 @@ features:
   search: true
 
 # Navigation
+# Each item has a 'key' for i18n lookup (nav.{key}) and 'title' as fallback
 navigation:
-  - title: Home
+  - key: home
+    title: Home
     url: /
-  - title: About
+  - key: about
+    title: About
     url: /about/
-  - title: Season
+  - key: season
+    title: Season
     url: /season/
-  - title: Awards
+  - key: awards
+    title: Awards
     url: /awards/
-  - title: Sponsors
+  - key: sponsors
+    title: Sponsors
     url: /sponsors/
-  - title: Docs
+  - key: docs
+    title: Docs
     url: /docs/
-  - title: News
+  - key: news
+    title: News
     url: /news/
 
 # Social links

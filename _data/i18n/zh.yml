@@ -1,0 +1,268 @@
+# Chinese (Simplified) - zh.yml
+# PitCrew i18n Translation File
+
+# Navigation
+nav:
+  home: "首页"
+  about: "关于我们"
+  season: "赛季"
+  awards: "奖项"
+  sponsors: "赞助商"
+  docs: "文档"
+  news: "新闻"
+  menu: "菜单"
+  skip_to_content: "跳转到主要内容"
+
+# Accessibility
+accessibility:
+  toggle_dark_mode: "切换深色模式"
+  toggle_accessibility: "切换无障碍模式"
+  open_menu: "打开菜单"
+  close_menu: "关闭菜单"
+  options: "无障碍选项"
+  high_contrast: "高对比度"
+  reduce_motion: "减少动画"
+  large_text: "大字体"
+
+# Footer
+footer:
+  quick_links: "快速链接"
+  about_us: "关于我们"
+  current_season: "当前赛季"
+  contact: "联系我们"
+  documentation: "文档"
+  connect: "社交媒体"
+  support_our_team: "支持我们的团队"
+  all_rights_reserved: "保留所有权利。"
+  powered_by: "技术支持"
+  built_by: "构建者"
+
+# Social Links (aria-labels)
+social:
+  instagram: "Instagram"
+  github: "GitHub"
+  youtube: "YouTube"
+  twitter: "Twitter/X"
+  email: "电子邮件"
+
+# Hero & Home Page
+home:
+  current_season: "当前赛季"
+  follow_journey: "跟随我们的"
+  season_suffix: "赛季之旅"
+  meet_the_team: "认识团队"
+  our_robot: "我们的机器人"
+  robot_desc: "查看我们机器人的设计和功能"
+  the_team: "团队"
+  team_desc: "认识我们才华横溢的团队成员"
+  outreach: "社区服务"
+  outreach_desc: "我们的社区影响力活动"
+  awards_recognition: "奖项与荣誉"
+  awards_desc: "庆祝我们团队的成就"
+  view_all_awards: "查看所有奖项"
+  upcoming_events: "即将举行的活动"
+  events_desc: "参加我们即将举行的比赛和活动"
+  our_sponsors: "我们的赞助商"
+  sponsors_desc: "感谢我们慷慨的赞助商使我们的工作成为可能"
+  become_sponsor: "成为赞助商"
+  join_our_team: "加入我们的团队"
+  join_desc: "对机器人、工程、编程或商业感兴趣？我们一直在寻找充满热情的学生加入我们的团队。"
+  learn_more: "了解更多"
+  contact_us: "联系我们"
+
+# Events
+events:
+  competition: "比赛"
+  outreach: "社区服务"
+  event: "活动"
+  view_all: "查看所有活动"
+  upcoming: "即将举行的活动"
+  events_intro: "参加我们的比赛、社区服务和社区活动。"
+  learn_more: "了解更多"
+
+# Sponsors
+sponsors:
+  platinum: "白金赞助商"
+  gold: "金牌赞助商"
+  silver: "银牌赞助商"
+  bronze: "铜牌赞助商"
+  view_all: "查看所有赞助商"
+  become: "成为赞助商"
+  helps_us: "您的赞助帮助我们"
+  purchase_materials: "购买材料"
+  register_competitions: "报名参加比赛"
+  travel_events: "前往活动场地"
+  conduct_outreach: "开展社区服务"
+  provide_meals: "提供餐食"
+  tiers: "赞助级别"
+  in_kind: "实物捐赠"
+  tax_deductibility: "税务减免"
+  contact_team: "联系我们的团队"
+
+# Navigation & Pagination
+pagination:
+  back_to_news: "返回新闻"
+  previous: "上一页"
+  next: "下一页"
+  on_this_page: "本页内容"
+  read_more: "阅读更多"
+
+# Season Page
+season:
+  robot: "机器人"
+  team: "团队"
+  gallery: "图库"
+  code: "代码"
+  cad: "CAD"
+  browse_all: "浏览所有赛季"
+  current: "当前"
+  archive: "存档"
+  game: "比赛"
+
+# 3D/CAD Viewer
+viewer:
+  view_in_ar: "在AR中查看"
+  loading_3d: "正在加载3D模型..."
+  drag_to_rotate: "拖动旋转 | 滚动缩放"
+  cad_disabled: "3D CAD查看器已禁用。请在_config.yml中启用"
+  zoom_in: "放大"
+  zoom_out: "缩小"
+  reset_view: "重置视图"
+  fullscreen: "全屏查看"
+  download_schematic: "下载原理图"
+  circuit_disabled: "电路查看器已禁用。请在_config.yml中启用"
+
+# Search & Empty States
+states:
+  no_results: "未找到相关结果"
+  no_posts: "暂无文章，请稍后再来！"
+  alumni_coming: "校友名单即将推出！"
+  email_coming: "电子邮件即将推出"
+
+# Contact Page
+contact:
+  general_inquiries: "一般咨询"
+  general_desc: "关于我们团队、加入方式或一般信息的问题。"
+  email_us: "发送邮件"
+  sponsorship: "赞助"
+  sponsorship_desc: "有兴趣支持我们的团队吗？我们很乐意与您合作。"
+  learn_sponsorship: "了解赞助详情"
+  follow_us: "关注我们"
+  follow_desc: "保持联系，跟随我们整个赛季的旅程！"
+  visit_us: "访问我们"
+  visit_desc: "我们在机器人赛季期间定期在学校聚会。如果您想参观并了解我们的工作，请联系我们安排参观。"
+  meeting_location: "聚会地点"
+  meeting_times: "聚会时间"
+  response_time: "我们通常在学年期间48小时内回复咨询。"
+
+# Team/Members
+team:
+  grade: "年级"
+  mentors: "导师"
+  current_members: "当前成员"
+  team_number: "团队编号"
+  team_members: "团队成员"
+  program: "项目"
+
+# Awards Page
+awards:
+  all: "所有奖项"
+  season: "赛季"
+  criteria: "奖项标准"
+  first_core_values: "FIRST核心价值观奖项"
+  inspire: "Inspire奖"
+  think: "Think奖"
+  connect: "Connect奖"
+  innovate: "Innovate奖"
+  control: "Control奖"
+  motivate: "Motivate奖"
+  design: "Design奖"
+
+# Alumni Page
+alumni:
+  where_now: "他们现在在哪里？"
+  class_of: "届"
+  now: "现在"
+  stay_connected: "保持联系"
+  share_updates: "分享您的职业动态"
+  mentor_members: "指导当前成员"
+  speak_events: "在团队活动中演讲"
+  contribute_network: "贡献我们的校友网络"
+
+# Judge Mode
+judge:
+  note: "注意"
+  optimized_judges: "此页面已针对比赛评委进行优化。"
+  print_page: "打印此页"
+  team_overview: "团队概览"
+  robot_overview: "机器人概览"
+  engineering_process: "工程过程"
+  design_philosophy: "设计理念"
+  awards_history: "获奖历史"
+  outreach_impact: "社区服务影响"
+  team_culture: "团队文化"
+  core_values: "核心价值观"
+  sustainability: "可持续性"
+
+# Handbook
+handbook:
+  toc: "目录"
+  team_mission: "团队使命"
+  membership: "会员要求"
+  team_structure: "团队结构"
+  meeting_schedule: "会议安排"
+  safety: "安全指南"
+  communication: "沟通"
+  code_of_conduct: "行为准则"
+  leadership: "领导层"
+  subteams: "子团队"
+  regular_season: "常规赛季"
+  build_season: "建造赛季"
+  eligibility: "资格"
+  expectations: "期望"
+  dues_fees: "会费"
+  emergency: "紧急程序"
+  primary_channels: "主要渠道"
+  response_expectations: "响应期望"
+  respect: "尊重"
+  responsibility: "责任"
+  integrity: "诚信"
+  gracious_professionalism: "优雅专业精神"
+  consequences: "后果"
+  questions: "有问题吗？"
+
+# About Page
+about:
+  our_mission: "我们的使命"
+  team_history: "团队历史"
+  our_team: "我们的团队"
+  what_we_do: "我们做什么"
+  competition_season: "比赛赛季"
+  join_team: "加入我们的团队"
+  requirements: "要求"
+  no_experience: "无需任何经验！"
+
+# News
+news:
+  description: "了解我们团队的活动、比赛结果和社区活动的最新动态。"
+  read_more: "阅读更多"
+
+# Docs
+docs:
+  documentation: "文档"
+
+# Common
+common:
+  and: "和"
+  or: "或"
+  loading: "加载中..."
+  error: "错误"
+  success: "成功"
+  cancel: "取消"
+  save: "保存"
+  close: "关闭"
+  open: "打开"
+  view: "查看"
+  download: "下载"
+  share: "分享"
+  print: "打印"

@@ -27,6 +27,10 @@ New to the team? Start here:
 - [Competition Checklist](/docs/competition-checklist/) - What to bring and do
 - [Outreach Guide](/docs/outreach/) - Community engagement best practices
 
+## Configuration
+
+- [Internationalization (i18n)](/docs/i18n/) - Configure site language and add translations
+
 ## Resources
 
 - [Useful Links](/docs/links/) - External resources and references

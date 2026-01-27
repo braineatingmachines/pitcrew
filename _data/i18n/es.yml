@@ -1,0 +1,268 @@
+# Spanish - es.yml
+# PitCrew i18n Translation File
+
+# Navigation
+nav:
+  home: "Inicio"
+  about: "Acerca de"
+  season: "Temporada"
+  awards: "Premios"
+  sponsors: "Patrocinadores"
+  docs: "Documentación"
+  news: "Noticias"
+  menu: "Menú"
+  skip_to_content: "Saltar al contenido principal"
+
+# Accessibility
+accessibility:
+  toggle_dark_mode: "Cambiar modo oscuro"
+  toggle_accessibility: "Cambiar modo de accesibilidad"
+  open_menu: "Abrir menú"
+  close_menu: "Cerrar menú"
+  options: "Opciones de accesibilidad"
+  high_contrast: "Alto contraste"
+  reduce_motion: "Reducir movimiento"
+  large_text: "Texto grande"
+
+# Footer
+footer:
+  quick_links: "Enlaces rápidos"
+  about_us: "Sobre nosotros"
+  current_season: "Temporada actual"
+  contact: "Contacto"
+  documentation: "Documentación"
+  connect: "Conectar"
+  support_our_team: "Apoya a nuestro equipo"
+  all_rights_reserved: "Todos los derechos reservados."
+  powered_by: "Desarrollado por"
+  built_by: "Construido por"
+
+# Social Links (aria-labels)
+social:
+  instagram: "Instagram"
+  github: "GitHub"
+  youtube: "YouTube"
+  twitter: "Twitter/X"
+  email: "Correo electrónico"
+
+# Hero & Home Page
+home:
+  current_season: "Temporada actual"
+  follow_journey: "Sigue nuestro viaje a través de la"
+  season_suffix: "temporada"
+  meet_the_team: "Conoce al equipo"
+  our_robot: "Nuestro robot"
+  robot_desc: "Mira el diseño y las capacidades de nuestro robot"
+  the_team: "El equipo"
+  team_desc: "Conoce a nuestros talentosos miembros"
+  outreach: "Alcance comunitario"
+  outreach_desc: "Nuestras iniciativas de impacto comunitario"
+  awards_recognition: "Premios y reconocimientos"
+  awards_desc: "Celebrando los logros de nuestro equipo"
+  view_all_awards: "Ver todos los premios"
+  upcoming_events: "Próximos eventos"
+  events_desc: "Únete a nosotros en estas competencias y eventos"
+  our_sponsors: "Nuestros patrocinadores"
+  sponsors_desc: "Gracias a nuestros generosos patrocinadores que hacen posible nuestro trabajo"
+  become_sponsor: "Conviértete en patrocinador"
+  join_our_team: "Únete a nuestro equipo"
+  join_desc: "¿Interesado en robótica, ingeniería, programación o negocios? Siempre buscamos estudiantes apasionados para unirse a nuestro equipo."
+  learn_more: "Más información"
+  contact_us: "Contáctanos"
+
+# Events
+events:
+  competition: "Competencia"
+  outreach: "Alcance"
+  event: "Evento"
+  view_all: "Ver todos los eventos"
+  upcoming: "Próximos eventos"
+  events_intro: "Únete a nosotros en competencias, eventos de alcance y actividades comunitarias."
+  learn_more: "Más información"
+
+# Sponsors
+sponsors:
+  platinum: "Patrocinadores Platino"
+  gold: "Patrocinadores Oro"
+  silver: "Patrocinadores Plata"
+  bronze: "Patrocinadores Bronce"
+  view_all: "Ver todos los patrocinadores"
+  become: "Conviértete en patrocinador"
+  helps_us: "Tu patrocinio nos ayuda a"
+  purchase_materials: "Comprar materiales"
+  register_competitions: "Inscribirnos en competencias"
+  travel_events: "Viajar a eventos"
+  conduct_outreach: "Realizar alcance comunitario"
+  provide_meals: "Proporcionar comidas"
+  tiers: "Niveles de patrocinio"
+  in_kind: "Donaciones en especie"
+  tax_deductibility: "Deducibilidad fiscal"
+  contact_team: "Contacta a nuestro equipo"
+
+# Navigation & Pagination
+pagination:
+  back_to_news: "Volver a noticias"
+  previous: "Anterior"
+  next: "Siguiente"
+  on_this_page: "En esta página"
+  read_more: "Leer más"
+
+# Season Page
+season:
+  robot: "Robot"
+  team: "Equipo"
+  gallery: "Galería"
+  code: "Código"
+  cad: "CAD"
+  browse_all: "Explorar todas las temporadas"
+  current: "Actual"
+  archive: "Archivo"
+  game: "Juego"
+
+# 3D/CAD Viewer
+viewer:
+  view_in_ar: "Ver en RA"
+  loading_3d: "Cargando modelo 3D..."
+  drag_to_rotate: "Arrastra para rotar | Desplaza para zoom"
+  cad_disabled: "El visor CAD 3D está desactivado. Actívalo en _config.yml"
+  zoom_in: "Acercar"
+  zoom_out: "Alejar"
+  reset_view: "Restablecer vista"
+  fullscreen: "Ver pantalla completa"
+  download_schematic: "Descargar esquema"
+  circuit_disabled: "El visor de circuitos está desactivado. Actívalo en _config.yml"
+
+# Search & Empty States
+states:
+  no_results: "No se encontraron resultados para"
+  no_posts: "Aún no hay publicaciones. ¡Vuelve pronto!"
+  alumni_coming: "¡Lista de exalumnos próximamente!"
+  email_coming: "Correo electrónico próximamente"
+
+# Contact Page
+contact:
+  general_inquiries: "Consultas generales"
+  general_desc: "Preguntas sobre nuestro equipo, cómo unirse, o información general."
+  email_us: "Envíanos un correo"
+  sponsorship: "Patrocinio"
+  sponsorship_desc: "¿Interesado en apoyar a nuestro equipo? Nos encantaría asociarnos contigo."
+  learn_sponsorship: "Más sobre patrocinio"
+  follow_us: "Síguenos"
+  follow_desc: "¡Mantente conectado y sigue nuestro viaje durante la temporada!"
+  visit_us: "Visítanos"
+  visit_desc: "Nos reunimos regularmente en nuestra escuela durante la temporada de robótica. Si deseas visitarnos y ver lo que hacemos, contáctanos para programar una visita."
+  meeting_location: "Lugar de reunión"
+  meeting_times: "Horarios de reunión"
+  response_time: "Normalmente respondemos a las consultas en 48 horas durante el año escolar."
+
+# Team/Members
+team:
+  grade: "Grado"
+  mentors: "Mentores"
+  current_members: "Miembros actuales"
+  team_number: "Número de equipo"
+  team_members: "Miembros del equipo"
+  program: "Programa"
+
+# Awards Page
+awards:
+  all: "Todos los premios"
+  season: "Temporada"
+  criteria: "Criterios de premios"
+  first_core_values: "Premios de valores fundamentales FIRST"
+  inspire: "Premio Inspire"
+  think: "Premio Think"
+  connect: "Premio Connect"
+  innovate: "Premio Innovate"
+  control: "Premio Control"
+  motivate: "Premio Motivate"
+  design: "Premio Design"
+
+# Alumni Page
+alumni:
+  where_now: "¿Dónde están ahora?"
+  class_of: "Promoción de"
+  now: "Ahora"
+  stay_connected: "Mantente conectado"
+  share_updates: "Comparte tus actualizaciones de carrera"
+  mentor_members: "Sé mentor de los miembros actuales"
+  speak_events: "Habla en eventos del equipo"
+  contribute_network: "Contribuye a nuestra red de exalumnos"
+
+# Judge Mode
+judge:
+  note: "Nota"
+  optimized_judges: "Esta página está optimizada para jueces de competencia."
+  print_page: "Imprimir esta página"
+  team_overview: "Resumen del equipo"
+  robot_overview: "Resumen del robot"
+  engineering_process: "Proceso de ingeniería"
+  design_philosophy: "Filosofía de diseño"
+  awards_history: "Historial de premios"
+  outreach_impact: "Impacto del alcance"
+  team_culture: "Cultura del equipo"
+  core_values: "Valores fundamentales"
+  sustainability: "Sostenibilidad"
+
+# Handbook
+handbook:
+  toc: "Tabla de contenidos"
+  team_mission: "Misión del equipo"
+  membership: "Requisitos de membresía"
+  team_structure: "Estructura del equipo"
+  meeting_schedule: "Horario de reuniones"
+  safety: "Normas de seguridad"
+  communication: "Comunicación"
+  code_of_conduct: "Código de conducta"
+  leadership: "Liderazgo"
+  subteams: "Subequipos"
+  regular_season: "Temporada regular"
+  build_season: "Temporada de construcción"
+  eligibility: "Elegibilidad"
+  expectations: "Expectativas"
+  dues_fees: "Cuotas y tarifas"
+  emergency: "Procedimientos de emergencia"
+  primary_channels: "Canales principales"
+  response_expectations: "Expectativas de respuesta"
+  respect: "Respeto"
+  responsibility: "Responsabilidad"
+  integrity: "Integridad"
+  gracious_professionalism: "Profesionalismo cortés"
+  consequences: "Consecuencias"
+  questions: "¿Preguntas?"
+
+# About Page
+about:
+  our_mission: "Nuestra misión"
+  team_history: "Historia del equipo"
+  our_team: "Nuestro equipo"
+  what_we_do: "Lo que hacemos"
+  competition_season: "Temporada de competencia"
+  join_team: "Únete a nuestro equipo"
+  requirements: "Requisitos"
+  no_experience: "¡No se necesita experiencia previa!"
+
+# News
+news:
+  description: "Mantente al día con las actividades de nuestro equipo, resultados de competencias y eventos comunitarios."
+  read_more: "Leer más"
+
+# Docs
+docs:
+  documentation: "Documentación"
+
+# Common
+common:
+  and: "y"
+  or: "o"
+  loading: "Cargando..."
+  error: "Error"
+  success: "Éxito"
+  cancel: "Cancelar"
+  save: "Guardar"
+  close: "Cerrar"
+  open: "Abrir"
+  view: "Ver"
+  download: "Descargar"
+  share: "Compartir"
+  print: "Imprimir"

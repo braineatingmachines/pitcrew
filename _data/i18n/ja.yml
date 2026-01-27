@@ -1,0 +1,268 @@
+# Japanese - ja.yml
+# PitCrew i18n Translation File
+
+# Navigation
+nav:
+  home: "ホーム"
+  about: "概要"
+  season: "シーズン"
+  awards: "受賞歴"
+  sponsors: "スポンサー"
+  docs: "ドキュメント"
+  news: "ニュース"
+  menu: "メニュー"
+  skip_to_content: "メインコンテンツへスキップ"
+
+# Accessibility
+accessibility:
+  toggle_dark_mode: "ダークモード切替"
+  toggle_accessibility: "アクセシビリティモード切替"
+  open_menu: "メニューを開く"
+  close_menu: "メニューを閉じる"
+  options: "アクセシビリティオプション"
+  high_contrast: "ハイコントラスト"
+  reduce_motion: "アニメーション軽減"
+  large_text: "大きな文字"
+
+# Footer
+footer:
+  quick_links: "クイックリンク"
+  about_us: "私たちについて"
+  current_season: "現在のシーズン"
+  contact: "お問い合わせ"
+  documentation: "ドキュメント"
+  connect: "つながる"
+  support_our_team: "チームを応援する"
+  all_rights_reserved: "All rights reserved."
+  powered_by: "Powered by"
+  built_by: "Built by"
+
+# Social Links (aria-labels)
+social:
+  instagram: "Instagram"
+  github: "GitHub"
+  youtube: "YouTube"
+  twitter: "Twitter/X"
+  email: "メール"
+
+# Hero & Home Page
+home:
+  current_season: "現在のシーズン"
+  follow_journey: "私たちの"
+  season_suffix: "シーズンの軌跡をフォロー"
+  meet_the_team: "チームに会う"
+  our_robot: "私たちのロボット"
+  robot_desc: "ロボットの設計と機能をご覧ください"
+  the_team: "チーム"
+  team_desc: "才能あふれるメンバーをご紹介"
+  outreach: "アウトリーチ"
+  outreach_desc: "地域貢献活動"
+  awards_recognition: "受賞と表彰"
+  awards_desc: "チームの功績を称えて"
+  view_all_awards: "すべての受賞歴を見る"
+  upcoming_events: "今後のイベント"
+  events_desc: "大会やイベントにご参加ください"
+  our_sponsors: "スポンサー"
+  sponsors_desc: "私たちの活動を支えてくださる寛大なスポンサーに感謝します"
+  become_sponsor: "スポンサーになる"
+  join_our_team: "チームに参加する"
+  join_desc: "ロボット工学、エンジニアリング、プログラミング、ビジネスに興味がありますか？情熱を持った学生を常に募集しています。"
+  learn_more: "詳しく見る"
+  contact_us: "お問い合わせ"
+
+# Events
+events:
+  competition: "大会"
+  outreach: "アウトリーチ"
+  event: "イベント"
+  view_all: "すべてのイベントを見る"
+  upcoming: "今後のイベント"
+  events_intro: "大会、アウトリーチイベント、コミュニティ活動にご参加ください。"
+  learn_more: "詳しく見る"
+
+# Sponsors
+sponsors:
+  platinum: "プラチナスポンサー"
+  gold: "ゴールドスポンサー"
+  silver: "シルバースポンサー"
+  bronze: "ブロンズスポンサー"
+  view_all: "すべてのスポンサーを見る"
+  become: "スポンサーになる"
+  helps_us: "ご支援により"
+  purchase_materials: "材料の購入"
+  register_competitions: "大会への登録"
+  travel_events: "イベントへの参加"
+  conduct_outreach: "アウトリーチ活動"
+  provide_meals: "食事の提供"
+  tiers: "スポンサーシップレベル"
+  in_kind: "現物寄付"
+  tax_deductibility: "税控除"
+  contact_team: "チームに連絡する"
+
+# Navigation & Pagination
+pagination:
+  back_to_news: "ニュースに戻る"
+  previous: "前へ"
+  next: "次へ"
+  on_this_page: "このページの内容"
+  read_more: "続きを読む"
+
+# Season Page
+season:
+  robot: "ロボット"
+  team: "チーム"
+  gallery: "ギャラリー"
+  code: "コード"
+  cad: "CAD"
+  browse_all: "すべてのシーズンを見る"
+  current: "現在"
+  archive: "アーカイブ"
+  game: "ゲーム"
+
+# 3D/CAD Viewer
+viewer:
+  view_in_ar: "ARで見る"
+  loading_3d: "3Dモデルを読み込み中..."
+  drag_to_rotate: "ドラッグで回転 | スクロールでズーム"
+  cad_disabled: "3D CADビューアは無効です。_config.ymlで有効にしてください"
+  zoom_in: "拡大"
+  zoom_out: "縮小"
+  reset_view: "ビューをリセット"
+  fullscreen: "全画面表示"
+  download_schematic: "回路図をダウンロード"
+  circuit_disabled: "回路ビューアは無効です。_config.ymlで有効にしてください"
+
+# Search & Empty States
+states:
+  no_results: "検索結果が見つかりません"
+  no_posts: "まだ投稿がありません。後でもう一度ご確認ください！"
+  alumni_coming: "卒業生リストは近日公開！"
+  email_coming: "メールアドレスは近日公開"
+
+# Contact Page
+contact:
+  general_inquiries: "一般的なお問い合わせ"
+  general_desc: "チームへの参加や一般的な情報についてのご質問。"
+  email_us: "メールを送る"
+  sponsorship: "スポンサーシップ"
+  sponsorship_desc: "チームのサポートに興味がありますか？パートナーシップを歓迎します。"
+  learn_sponsorship: "スポンサーシップについて"
+  follow_us: "フォローする"
+  follow_desc: "シーズンを通じて私たちの活動をフォローしてください！"
+  visit_us: "訪問する"
+  visit_desc: "ロボットシーズン中は定期的に学校でミーティングを行っています。見学をご希望の方は、ご連絡ください。"
+  meeting_location: "ミーティング場所"
+  meeting_times: "ミーティング時間"
+  response_time: "通常、学期中は48時間以内に返信いたします。"
+
+# Team/Members
+team:
+  grade: "学年"
+  mentors: "メンター"
+  current_members: "現在のメンバー"
+  team_number: "チーム番号"
+  team_members: "チームメンバー"
+  program: "プログラム"
+
+# Awards Page
+awards:
+  all: "すべての受賞歴"
+  season: "シーズン"
+  criteria: "受賞基準"
+  first_core_values: "FIRSTコアバリュー賞"
+  inspire: "Inspire賞"
+  think: "Think賞"
+  connect: "Connect賞"
+  innovate: "Innovate賞"
+  control: "Control賞"
+  motivate: "Motivate賞"
+  design: "Design賞"
+
+# Alumni Page
+alumni:
+  where_now: "卒業生は今どこに？"
+  class_of: "卒業年"
+  now: "現在"
+  stay_connected: "つながりを保つ"
+  share_updates: "キャリアの近況を共有"
+  mentor_members: "現役メンバーのメンターになる"
+  speak_events: "チームイベントで講演"
+  contribute_network: "卒業生ネットワークに貢献"
+
+# Judge Mode
+judge:
+  note: "注意"
+  optimized_judges: "このページは大会審査員向けに最適化されています。"
+  print_page: "このページを印刷"
+  team_overview: "チーム概要"
+  robot_overview: "ロボット概要"
+  engineering_process: "エンジニアリングプロセス"
+  design_philosophy: "設計思想"
+  awards_history: "受賞歴"
+  outreach_impact: "アウトリーチの影響"
+  team_culture: "チーム文化"
+  core_values: "コアバリュー"
+  sustainability: "持続可能性"
+
+# Handbook
+handbook:
+  toc: "目次"
+  team_mission: "チームミッション"
+  membership: "メンバーシップ要件"
+  team_structure: "チーム構成"
+  meeting_schedule: "ミーティングスケジュール"
+  safety: "安全ガイドライン"
+  communication: "コミュニケーション"
+  code_of_conduct: "行動規範"
+  leadership: "リーダーシップ"
+  subteams: "サブチーム"
+  regular_season: "レギュラーシーズン"
+  build_season: "ビルドシーズン"
+  eligibility: "参加資格"
+  expectations: "期待事項"
+  dues_fees: "会費"
+  emergency: "緊急時の手順"
+  primary_channels: "主な連絡手段"
+  response_expectations: "返信期待"
+  respect: "尊重"
+  responsibility: "責任"
+  integrity: "誠実さ"
+  gracious_professionalism: "グレイシャス・プロフェッショナリズム"
+  consequences: "結果"
+  questions: "ご質問は？"
+
+# About Page
+about:
+  our_mission: "私たちのミッション"
+  team_history: "チームの歴史"
+  our_team: "私たちのチーム"
+  what_we_do: "私たちの活動"
+  competition_season: "大会シーズン"
+  join_team: "チームに参加する"
+  requirements: "要件"
+  no_experience: "経験は必要ありません！"
+
+# News
+news:
+  description: "チームの活動、大会結果、コミュニティイベントの最新情報をお届けします。"
+  read_more: "続きを読む"
+
+# Docs
+docs:
+  documentation: "ドキュメント"
+
+# Common
+common:
+  and: "と"
+  or: "または"
+  loading: "読み込み中..."
+  error: "エラー"
+  success: "成功"
+  cancel: "キャンセル"
+  save: "保存"
+  close: "閉じる"
+  open: "開く"
+  view: "表示"
+  download: "ダウンロード"
+  share: "共有"
+  print: "印刷"

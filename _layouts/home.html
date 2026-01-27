@@ -8,9 +8,9 @@ layout: default
 <section class="section bg-[var(--color-surface)]">
   <div class="container">
     <div class="text-center mb-12">
-      <h2 class="mb-4">Current Season</h2>
+      <h2 class="mb-4">{% include i18n.html key="home.current_season" %}</h2>
       <p class="text-[var(--color-text-muted)] max-w-2xl mx-auto">
-        Follow our journey through the {{ site.site.current_season }} season
+        {% include i18n.html key="home.follow_journey" %} {{ site.site.current_season }} {% include i18n.html key="home.season_suffix" %}
       </p>
     </div>
 
@@ -18,24 +18,24 @@ layout: default
       <a href="{{ '/season/' | relative_url }}" class="card group">
         <div class="card-body text-center">
           <div class="text-4xl mb-4">🤖</div>
-          <h3 class="card-title">Our Robot</h3>
-          <p class="text-[var(--color-text-muted)]">See our robot design and capabilities</p>
+          <h3 class="card-title">{% include i18n.html key="home.our_robot" %}</h3>
+          <p class="text-[var(--color-text-muted)]">{% include i18n.html key="home.robot_desc" %}</p>
         </div>
       </a>
 
       <a href="{{ '/season/' | relative_url }}#team" class="card group">
         <div class="card-body text-center">
           <div class="text-4xl mb-4">👥</div>
-          <h3 class="card-title">The Team</h3>
-          <p class="text-[var(--color-text-muted)]">Meet our talented team members</p>
+          <h3 class="card-title">{% include i18n.html key="home.the_team" %}</h3>
+          <p class="text-[var(--color-text-muted)]">{% include i18n.html key="home.team_desc" %}</p>
         </div>
       </a>
 
       <a href="{{ '/season/' | relative_url }}#outreach" class="card group">
         <div class="card-body text-center">
           <div class="text-4xl mb-4">🌍</div>
-          <h3 class="card-title">Outreach</h3>
-          <p class="text-[var(--color-text-muted)]">Our community impact initiatives</p>
+          <h3 class="card-title">{% include i18n.html key="home.outreach" %}</h3>
+          <p class="text-[var(--color-text-muted)]">{% include i18n.html key="home.outreach_desc" %}</p>
         </div>
       </a>
     </div>
@@ -47,9 +47,9 @@ layout: default
 <section class="section">
   <div class="container">
     <div class="text-center mb-12">
-      <h2 class="mb-4">Awards & Recognition</h2>
+      <h2 class="mb-4">{% include i18n.html key="home.awards_recognition" %}</h2>
       <p class="text-[var(--color-text-muted)] max-w-2xl mx-auto">
-        Celebrating our team's achievements
+        {% include i18n.html key="home.awards_desc" %}
       </p>
     </div>
 
@@ -68,7 +68,7 @@ layout: default
 
     <div class="text-center mt-8">
       <a href="{{ '/awards/' | relative_url }}" class="btn bg-[#003974] text-white hover:bg-[#002855] font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
-        🏆 View All Awards
+        🏆 {% include i18n.html key="home.view_all_awards" %}
       </a>
     </div>
   </div>
@@ -80,9 +80,9 @@ layout: default
 <section class="section bg-[var(--color-surface)]">
   <div class="container">
     <div class="text-center mb-12">
-      <h2 class="mb-4">Upcoming Events</h2>
+      <h2 class="mb-4">{% include i18n.html key="home.upcoming_events" %}</h2>
       <p class="text-[var(--color-text-muted)] max-w-2xl mx-auto">
-        Join us at these upcoming competitions and events
+        {% include i18n.html key="home.events_desc" %}
       </p>
     </div>
 
@@ -100,9 +100,9 @@ layout: default
 <section class="section">
   <div class="container">
     <div class="text-center mb-12">
-      <h2 class="mb-4">Our Sponsors</h2>
+      <h2 class="mb-4">{% include i18n.html key="home.our_sponsors" %}</h2>
       <p class="text-[var(--color-text-muted)] max-w-2xl mx-auto">
-        Thank you to our generous sponsors who make our work possible
+        {% include i18n.html key="home.sponsors_desc" %}
       </p>
     </div>
 
@@ -110,7 +110,7 @@ layout: default
 
     <div class="text-center mt-8">
       <a href="{{ '/sponsors/' | relative_url }}" class="btn bg-[#003974] text-white hover:bg-[#002855] font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all">
-        ❤️ Become a Sponsor
+        ❤️ {% include i18n.html key="home.become_sponsor" %}
       </a>
     </div>
   </div>
@@ -120,17 +120,16 @@ layout: default
 <!-- Join Section -->
 <section class="section bg-gradient-to-r from-[#003974] to-[#002855] text-white">
   <div class="container text-center">
-    <h2 class="mb-4 text-white">Join Our Team</h2>
+    <h2 class="mb-4 text-white">{% include i18n.html key="home.join_our_team" %}</h2>
     <p class="max-w-2xl mx-auto mb-8 text-white/90">
-      Interested in robotics, engineering, programming, or business?
-      We're always looking for passionate students to join our team.
+      {% include i18n.html key="home.join_desc" %}
     </p>
     <div class="flex flex-col sm:flex-row gap-4 justify-center">
       <a href="{{ '/about/' | relative_url }}#join" class="btn bg-[#F57E25] text-white hover:bg-[#d96a1f] font-semibold px-6 py-3">
-        Learn More
+        {% include i18n.html key="home.learn_more" %}
       </a>
       <a href="{{ '/contact/' | relative_url }}" class="btn bg-white text-[#003974] hover:bg-gray-100 font-semibold px-6 py-3">
-        Contact Us
+        {% include i18n.html key="home.contact_us" %}
       </a>
     </div>
   </div>
