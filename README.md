@@ -2,7 +2,13 @@
 
 A free, open-source website template for robotics teams. Get your team's professional portfolio website up and running in minutes — no coding experience required.
 
-> **Deploying a specific branch on GitHub Pages:** Go to your repository **Settings** → **Pages** → under "Build and deployment", select **Source: GitHub Actions**. Then edit your `.github/workflows/jekyll.yml` file and change `branches: ["main"]` to your desired branch (e.g., `branches: ["i18n"]`). Commit and push — your site will deploy from that branch.
+> **Deploying a specific branch on GitHub Pages:** 
+> 
+> * Go to your repository **Settings** → **Pages** 
+> * Under "Build and deployment" 
+> * Select **Source: GitHub Actions**. 
+> * Then edit your `.github/workflows/jekyll.yml` file and change `branches: ["main"]` to your desired branch (e.g., `branches: ["i18n"]`). 
+> * Commit and push — your site will deploy from that branch.
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Jekyll](https://img.shields.io/badge/jekyll-4.3+-red.svg)
