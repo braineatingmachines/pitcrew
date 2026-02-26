@@ -1,13 +1,13 @@
-<section class="relative overflow-hidden bg-gradient-to-br from-[#003974] via-[#002855] to-[#001a3d] text-white">
+<section class="relative overflow-hidden hero-gradient text-white">
   <div class="absolute inset-0 bg-black/5"></div>
   <!-- Orange accent stripe -->
-  <div class="absolute bottom-0 left-0 right-0 h-2 bg-[#F57E25]"></div>
+  <div class="absolute bottom-0 left-0 right-0 h-2 bg-[var(--color-secondary)]"></div>
 
   <div class="relative container py-20 md:py-32">
     <div class="max-w-3xl">
       <div class="flex items-center gap-2 mb-4">
         <span class="px-3 py-1 rounded-full bg-white/20 text-white text-sm font-medium">{{ site.site.program }} Team #{{ site.site.team_number }}</span>
-        <span class="px-3 py-1 rounded-full bg-[#F57E25] text-white text-sm font-semibold">{{ site.site.current_season }}</span>
+        <span class="px-3 py-1 rounded-full bg-[var(--color-secondary)] text-white text-sm font-semibold">{{ site.site.current_season }}</span>
       </div>
 
       <h1 class="text-4xl md:text-6xl font-bold mb-6 text-white">
@@ -19,10 +19,10 @@
       </p>
 
       <div class="flex flex-col sm:flex-row gap-4">
-        <a href="{{ '/season/' | relative_url }}" class="btn bg-[#F57E25] text-white hover:bg-[#d96a1f] font-semibold px-6 py-3">
+        <a href="{{ '/season/' | relative_url }}" class="btn btn-secondary font-semibold px-6 py-3">
           Current Season
         </a>
-        <a href="{{ '/about/' | relative_url }}" class="btn bg-white text-[#003974] hover:bg-gray-100 font-semibold px-6 py-3">
+        <a href="{{ '/about/' | relative_url }}" class="btn btn-light font-semibold px-6 py-3">
           Meet the Team
         </a>
       </div>
@@ -30,7 +30,7 @@
   </div>
 
   <!-- Decorative Elements -->
-  <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-[#F57E25]/20 rounded-full blur-3xl"></div>
+  <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary-glow rounded-full blur-3xl"></div>
   <div class="absolute -top-20 -left-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
   <div class="absolute bottom-2 left-0 right-0 h-24 bg-gradient-to-t from-[var(--color-background)] to-transparent"></div>
 </section>

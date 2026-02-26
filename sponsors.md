@@ -24,7 +24,7 @@ Your sponsorship helps us:
 
 <div class="grid md:grid-cols-2 gap-6 my-8">
 
-<div class="card border-4 border-gray-400">
+<div class="card border-4 border-sponsor-platinum">
   <div class="card-body">
     <h3 class="card-title">Platinum Sponsor</h3>
     <p class="text-2xl font-bold text-primary mb-4">$2,500+</p>
@@ -39,7 +39,7 @@ Your sponsorship helps us:
   </div>
 </div>
 
-<div class="card border-4 border-yellow-500">
+<div class="card border-4 border-sponsor-gold">
   <div class="card-body">
     <h3 class="card-title">Gold Sponsor</h3>
     <p class="text-2xl font-bold text-primary mb-4">$1,000+</p>
@@ -53,7 +53,7 @@ Your sponsorship helps us:
   </div>
 </div>
 
-<div class="card border-4 border-gray-300">
+<div class="card border-4 border-sponsor-silver">
   <div class="card-body">
     <h3 class="card-title">Silver Sponsor</h3>
     <p class="text-2xl font-bold text-primary mb-4">$500+</p>
@@ -65,7 +65,7 @@ Your sponsorship helps us:
   </div>
 </div>
 
-<div class="card border-4 border-amber-700">
+<div class="card border-4 border-sponsor-bronze">
   <div class="card-body">
     <h3 class="card-title">Bronze Sponsor</h3>
     <p class="text-2xl font-bold text-primary mb-4">$250+</p>

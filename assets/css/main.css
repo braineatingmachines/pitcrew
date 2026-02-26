@@ -2,17 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
-/* CSS Custom Properties for Theme - Official FTC Colors */
+/* CSS Custom Properties for Theme
+ * Brand colors (primary, secondary, etc.) are injected from _config.yml by Jekyll.
+ * The values below are fallbacks only — edit colors in _config.yml instead.
+ */
 :root {
-  /* FTC Color Palette */
-  --color-primary: #003974;    /* Deep Blue */
+  /* Fallback brand colors — overridden by inline <style> from _config.yml */
+  --color-primary: #003974;
   --color-primary-highlight: #002855;
-  --color-secondary: #F57E25;  /* FIRST Orange */
+  --color-primary-darkest: #001a3d;
+  --color-secondary: #F57E25;
   --color-secondary-highlight: #d96a1f;
-  --color-success: #28a745;    /* Success green */
-  --color-info: #17a2b8;       /* Info teal */
-  --color-warning: #f0b37e;    /* Warning */
-  --color-danger: #dc3545;     /* Danger red */
+  --color-secondary-glow: #F57E2533;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #f0b37e;
+  --color-danger: #dc3545;
+  --color-sponsor-platinum: #9ca3af;
+  --color-sponsor-gold: #eab308;
+  --color-sponsor-silver: #d1d5db;
+  --color-sponsor-bronze: #92400e;
+  --color-link: #003974;
+  --color-link-hover: #002855;
 
   /* Light mode surfaces */
   --color-background: #ffffff;
@@ -20,8 +31,6 @@
   --color-text: #212529;       /* Dark text */
   --color-text-muted: #6c757d; /* Muted gray */
   --color-border: #dee2e6;     /* Light border */
-  --color-link: #003974;       /* Blue link */
-  --color-link-hover: #002855;
 }
 
 .dark {
@@ -318,6 +327,50 @@
   .btn-outline-secondary:hover {
     background-color: var(--color-secondary);
     color: #ffffff;
+  }
+
+  /* Light button - for use on primary-colored backgrounds */
+  .btn-light {
+    background-color: #ffffff;
+    color: var(--color-primary);
+  }
+
+  .btn-light:hover {
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    text-decoration: none;
+  }
+
+  /* Hero section gradient background */
+  .hero-gradient {
+    background: linear-gradient(to bottom right, var(--color-primary), var(--color-primary-highlight), var(--color-primary-darkest));
+  }
+
+  /* Primary gradient for CTA sections */
+  .bg-primary-gradient {
+    background: linear-gradient(to right, var(--color-primary), var(--color-primary-highlight));
+  }
+
+  /* Secondary color at low opacity for decorative glows */
+  .bg-secondary-glow {
+    background-color: var(--color-secondary-glow);
+  }
+
+  /* Sponsor tier border colors */
+  .border-sponsor-platinum {
+    border-color: var(--color-sponsor-platinum);
+  }
+
+  .border-sponsor-gold {
+    border-color: var(--color-sponsor-gold);
+  }
+
+  .border-sponsor-silver {
+    border-color: var(--color-sponsor-silver);
+  }
+
+  .border-sponsor-bronze {
+    border-color: var(--color-sponsor-bronze);
   }
 
   /* Cards */

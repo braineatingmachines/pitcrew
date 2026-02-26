@@ -1,0 +1,55 @@
+{% comment %}
+  Language Switcher Component
+  Displays a dropdown to switch between supported languages.
+  Detects browser language on first visit, stores preference in localStorage.
+{% endcomment %}
+
+<div class="relative" id="language-switcher">
+  <button
+    id="language-toggle"
+    class="p-2 rounded-lg hover:bg-[var(--color-surface)] transition-colors flex items-center gap-1"
+    aria-label="{% include i18n.html key="accessibility.change_language" %}"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"/>
+    </svg>
+    <span class="hidden sm:inline text-sm font-medium" id="current-lang-label">EN</span>
+    <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+    </svg>
+  </button>
+
+  <!-- Dropdown Menu -->
+  <div
+    id="language-menu"
+    class="hidden absolute right-0 mt-2 w-40 bg-[var(--color-background)] border border-[var(--color-border)] rounded-lg shadow-lg z-50 overflow-hidden"
+    role="menu"
+  >
+    <button class="lang-option w-full px-4 py-2 text-left hover:bg-[var(--color-surface)] flex items-center gap-2" data-lang="en" role="menuitem">
+      <span class="text-base">🇺🇸</span>
+      <span>English</span>
+    </button>
+    <button class="lang-option w-full px-4 py-2 text-left hover:bg-[var(--color-surface)] flex items-center gap-2" data-lang="fr" role="menuitem">
+      <span class="text-base">🇫🇷</span>
+      <span>Français</span>
+    </button>
+    <button class="lang-option w-full px-4 py-2 text-left hover:bg-[var(--color-surface)] flex items-center gap-2" data-lang="de" role="menuitem">
+      <span class="text-base">🇩🇪</span>
+      <span>Deutsch</span>
+    </button>
+    <button class="lang-option w-full px-4 py-2 text-left hover:bg-[var(--color-surface)] flex items-center gap-2" data-lang="es" role="menuitem">
+      <span class="text-base">🇪🇸</span>
+      <span>Español</span>
+    </button>
+    <button class="lang-option w-full px-4 py-2 text-left hover:bg-[var(--color-surface)] flex items-center gap-2" data-lang="zh" role="menuitem">
+      <span class="text-base">🇨🇳</span>
+      <span>中文</span>
+    </button>
+    <button class="lang-option w-full px-4 py-2 text-left hover:bg-[var(--color-surface)] flex items-center gap-2" data-lang="ja" role="menuitem">
+      <span class="text-base">🇯🇵</span>
+      <span>日本語</span>
+    </button>
+  </div>
+</div>

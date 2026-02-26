@@ -443,7 +443,11 @@ Your live site will update in 2-3 minutes.
 
 ### Watching CSS Changes
 
-If you're editing styles, run this in a separate terminal:
+The CSS build (`npm run build:css` / `npm run watch:css`) compiles Tailwind utilities into `assets/css/output.css`. **You only need this if you're modifying `main.css` itself** (adding new component classes, changing layout styles, etc.).
+
+**For color changes, skip the CSS build entirely.** Colors are controlled in `_config.yml` and injected by Jekyll — just restart `jekyll serve`.
+
+If you are editing `main.css` styles, run this in a separate terminal to auto-recompile on save:
 
 ```bash
 npm run watch:css
@@ -510,16 +514,30 @@ Display an interactive 3D model of your robot:
 
 ### Custom Colors
 
-Edit `_config.yml` to match your team colors:
+Edit `_config.yml` to match your team colors — **this is the only file you need to change**. No CSS rebuild required; just restart `jekyll serve` and every gradient, button, badge, and border updates automatically.
 
 ```yaml
 theme:
   colors:
-    primary: "#007bff"    # Main color (buttons, links)
-    secondary: "#F57E25"  # Accent color (highlights)
+    # Brand colors
+    primary: "#003974"              # Buttons, links, gradients
+    primary_highlight: "#002855"    # Hover states, gradient midpoint
+    primary_darkest: "#001a3d"      # Hero gradient end stop
+    secondary: "#F57E25"            # Accent color (highlights, badges)
+    secondary_highlight: "#d96a1f"  # Accent hover states
+    # Semantic colors
+    success: "#28a745"
+    info: "#17a2b8"
+    warning: "#f0b37e"
+    danger: "#dc3545"
+    # Sponsor tier border colors
+    sponsor_platinum: "#9ca3af"
+    sponsor_gold: "#eab308"
+    sponsor_silver: "#d1d5db"
+    sponsor_bronze: "#92400e"
 ```
 
-Then edit `assets/css/main.css` and update the color variables at the top.
+Colors are injected into every page's `<head>` as CSS custom properties by Jekyll at build time, overriding any compiled values in `output.css`. All components reference these variables — never hardcoded hex values — so a single edit to `_config.yml` propagates everywhere.
 
 ### Disabling Features
 

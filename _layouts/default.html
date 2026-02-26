@@ -10,6 +10,27 @@
   {% feed_meta %}
 
   <link rel="stylesheet" href="{{ '/assets/css/output.css' | relative_url }}">
+  <!-- Theme colors injected from _config.yml — edit colors there, not in main.css -->
+  <style>
+    :root {
+      --color-primary: {{ site.theme.colors.primary }};
+      --color-primary-highlight: {{ site.theme.colors.primary_highlight }};
+      --color-primary-darkest: {{ site.theme.colors.primary_darkest }};
+      --color-secondary: {{ site.theme.colors.secondary }};
+      --color-secondary-highlight: {{ site.theme.colors.secondary_highlight }};
+      --color-secondary-glow: {{ site.theme.colors.secondary | append: '33' }};
+      --color-success: {{ site.theme.colors.success }};
+      --color-info: {{ site.theme.colors.info }};
+      --color-warning: {{ site.theme.colors.warning }};
+      --color-danger: {{ site.theme.colors.danger }};
+      --color-sponsor-platinum: {{ site.theme.colors.sponsor_platinum }};
+      --color-sponsor-gold: {{ site.theme.colors.sponsor_gold }};
+      --color-sponsor-silver: {{ site.theme.colors.sponsor_silver }};
+      --color-sponsor-bronze: {{ site.theme.colors.sponsor_bronze }};
+      --color-link: {{ site.theme.colors.primary }};
+      --color-link-hover: {{ site.theme.colors.primary_highlight }};
+    }
+  </style>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">

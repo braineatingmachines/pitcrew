@@ -13,14 +13,25 @@ site:
   logo: "/assets/images/placeholder.svg"
 
 # Theme configuration - Official FTC Colors
+# Edit colors here. Changes take effect after restarting Jekyll (no CSS rebuild needed).
 theme:
   colors:
-    primary: "#003974"    # Deep Blue
-    secondary: "#F57E25"  # FIRST Orange (brand color)
-    success: "#28a745"    # Success green
-    info: "#17a2b8"       # Info teal
-    warning: "#f0b37e"    # Warning orange
-    danger: "#dc3545"     # Danger red
+    # Brand colors
+    primary: "#003974"              # Deep Blue
+    primary_highlight: "#002855"    # Darker blue (hover states, gradient end)
+    primary_darkest: "#001a3d"      # Very dark navy (hero gradient end)
+    secondary: "#F57E25"            # FIRST Orange (brand color)
+    secondary_highlight: "#d96a1f"  # Darker orange (hover states)
+    # Semantic colors
+    success: "#28a745"
+    info: "#17a2b8"
+    warning: "#f0b37e"
+    danger: "#dc3545"
+    # Sponsor tier border colors
+    sponsor_platinum: "#9ca3af"
+    sponsor_gold: "#eab308"
+    sponsor_silver: "#d1d5db"
+    sponsor_bronze: "#92400e"
   dark_mode: true
 
 # Features toggle
