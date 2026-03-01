@@ -1,5 +1,11 @@
+{% assign hero_img = page.hero_image | default: site.site.hero_image %}
+{% if hero_img %}
+<section class="relative overflow-hidden text-white" style="background-image: url('{{ hero_img | relative_url }}'); background-size: cover; background-position: center;">
+  <div class="absolute inset-0 bg-black/50"></div>
+{% else %}
 <section class="relative overflow-hidden hero-gradient text-white">
   <div class="absolute inset-0 bg-black/5"></div>
+{% endif %}
   <!-- Orange accent stripe -->
   <div class="absolute bottom-0 left-0 right-0 h-2 bg-[var(--color-secondary)]"></div>
 
@@ -29,8 +35,10 @@
     </div>
   </div>
 
-  <!-- Decorative Elements (hidden on mobile to reduce paint cost) -->
+  <!-- Decorative Elements — only shown with gradient background -->
+  {% unless hero_img %}
   <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary-glow rounded-full blur-2xl hidden md:block" aria-hidden="true"></div>
   <div class="absolute -top-20 -left-20 w-80 h-80 bg-white/5 rounded-full blur-2xl hidden md:block" aria-hidden="true"></div>
+  {% endunless %}
   <div class="absolute bottom-2 left-0 right-0 h-24 bg-gradient-to-t from-[var(--color-background)] to-transparent" aria-hidden="true"></div>
 </section>

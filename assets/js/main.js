@@ -26,30 +26,22 @@ if (accessibilityToggle) {
 // Mobile Menu
 const mobileMenuButton = document.getElementById('mobile-menu-button');
 const mobileMenu = document.getElementById('mobile-menu');
-const mobileMenuClose = document.getElementById('mobile-menu-close');
-const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
 
 function openMobileMenu() {
   mobileMenu?.classList.remove('hidden');
-  mobileMenu?.classList.add('flex');
-  document.body.style.overflow = 'hidden';
   mobileMenuButton?.setAttribute('aria-expanded', 'true');
-  mobileMenu?.querySelector('a, button')?.focus();
 }
 
 function closeMobileMenu() {
   mobileMenu?.classList.add('hidden');
-  mobileMenu?.classList.remove('flex');
-  document.body.style.overflow = '';
   mobileMenuButton?.setAttribute('aria-expanded', 'false');
-  mobileMenuButton?.focus();
 }
 
-mobileMenuButton?.addEventListener('click', openMobileMenu);
-mobileMenuClose?.addEventListener('click', closeMobileMenu);
-mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
+mobileMenuButton?.addEventListener('click', () => {
+  mobileMenu?.classList.contains('hidden') ? openMobileMenu() : closeMobileMenu();
+});
 
-// Keyboard: Escape closes overlays, arrows navigate lightbox, Tab traps focus in mobile menu
+// Keyboard: Escape closes overlays, arrows navigate lightbox
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeMobileMenu();
@@ -58,17 +50,6 @@ document.addEventListener('keydown', (e) => {
   if (lightbox && !lightbox.classList.contains('hidden')) {
     if (e.key === 'ArrowRight') nextImage();
     if (e.key === 'ArrowLeft') prevImage();
-  }
-  if (mobileMenu && !mobileMenu.classList.contains('hidden') && e.key === 'Tab') {
-    const focusable = [...mobileMenu.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])')];
-    if (!focusable.length) return;
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-    if (e.shiftKey) {
-      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
-    } else {
-      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
-    }
   }
 });
 
@@ -173,6 +154,45 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
+
+// Season page scroll-spy: highlights the active section in the secondary nav
+const seasonNav = document.getElementById('season-nav');
+if (seasonNav) {
+  const links = [...seasonNav.querySelectorAll('a[href^="#"]')];
+  const sections = links
+    .map(a => document.getElementById(a.getAttribute('href').slice(1)))
+    .filter(Boolean);
+
+  if (sections.length) {
+    let currentId = null;
+    const intersecting = new Set();
+
+    const activate = (id) => {
+      if (id === currentId) return;
+      currentId = id;
+      links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + id));
+    };
+
+    // On click: immediately highlight without waiting for scroll to settle
+    links.forEach(a => a.addEventListener('click', () => activate(a.getAttribute('href').slice(1))));
+
+    // Watch sections; rootMargin accounts for the two stacked sticky headers (~130px)
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) intersecting.add(e.target.id);
+        else intersecting.delete(e.target.id);
+      });
+      // Highlight the topmost visible section (document order)
+      const topmost = sections.find(s => intersecting.has(s.id));
+      if (topmost) activate(topmost.id);
+    }, {
+      rootMargin: '-130px 0px -40% 0px',
+      threshold: 0,
+    });
+
+    sections.forEach(s => observer.observe(s));
+  }
+}
 
 // Circuit viewer controls (if present)
 document.querySelectorAll('.circuit-viewer-container').forEach(container => {

@@ -19,7 +19,7 @@
       <div class="hidden md:flex items-center gap-1">
         {% for item in site.navigation %}
         <a href="{{ item.url | relative_url }}"
-           class="nav-link {% if page.url == item.url %}active{% endif %}">
+           class="nav-link {% if page.url == item.url or (item.url == '/season/' and page.layout == 'season') %}active{% endif %}">
           {{ item.title }}
         </a>
         {% endfor %}
@@ -41,26 +41,13 @@
           </svg>
         </button>
 
-        {% if site.features.accessibility_toggle %}
-        <!-- Accessibility Toggle -->
-        <button
-          id="accessibility-toggle"
-          class="p-2 rounded-lg hover:bg-[var(--color-surface)] transition-colors"
-          aria-label="Toggle accessibility mode"
-        >
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <circle cx="12" cy="4.5" r="2" stroke-width="2"/>
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10h14M12 8v6M9 20l3-6 3 6"/>
-          </svg>
-        </button>
-        {% endif %}
-
         <!-- Mobile Menu Button -->
         <button
           id="mobile-menu-button"
           class="md:hidden p-2 rounded-lg hover:bg-[var(--color-surface)] transition-colors"
-          aria-label="Open menu"
+          aria-label="Toggle menu"
           aria-expanded="false"
+          aria-controls="mobile-menu"
         >
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
@@ -68,35 +55,13 @@
         </button>
       </div>
     </nav>
-  </div>
 
-  <!-- Mobile Menu Drawer -->
-  <div
-    id="mobile-menu"
-    class="hidden fixed inset-0 z-50 md:hidden"
-  >
-    <!-- Backdrop -->
-    <div class="absolute inset-0 bg-black/50" id="mobile-menu-backdrop"></div>
-
-    <!-- Drawer -->
-    <div class="absolute right-0 top-0 h-full w-64 bg-[var(--color-background)] shadow-xl transform transition-transform">
-      <div class="p-4 border-b border-[var(--color-border)] flex justify-between items-center">
-        <span class="font-bold">Menu</span>
-        <button
-          id="mobile-menu-close"
-          class="p-2 rounded-lg hover:bg-[var(--color-surface)]"
-          aria-label="Close menu"
-        >
-          <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
-          </svg>
-        </button>
-      </div>
-
-      <nav class="p-4 space-y-2">
+    <!-- Mobile Menu (inline, expands below the nav bar) -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-[var(--color-border)] py-3">
+      <nav class="flex flex-col gap-1">
         {% for item in site.navigation %}
         <a href="{{ item.url | relative_url }}"
-           class="block py-2 px-4 rounded-lg {% if page.url == item.url %}bg-primary/10 text-primary{% else %}hover:bg-[var(--color-surface)]{% endif %}">
+           class="block py-2 px-4 rounded-lg {% if page.url == item.url or (item.url == '/season/' and page.layout == 'season') %}bg-primary/10 text-primary font-medium{% else %}hover:bg-[var(--color-surface)]{% endif %}">
           {{ item.title }}
         </a>
         {% endfor %}

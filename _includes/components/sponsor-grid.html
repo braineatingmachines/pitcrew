@@ -6,40 +6,28 @@ Expects site.data.sponsors with: name, logo, url, tier (platinum|gold|silver|bro
 {% assign tiers = "platinum,gold,silver,bronze" | split: "," %}
 
 {% for tier in tiers %}
-  {% assign tier_sponsors = site.data.sponsors | where: "tier", tier %}
-  {% if tier_sponsors.size > 0 %}
-    {% case tier %}
-      {% when "platinum" %}
-        {% assign gap_class = "gap-8" %}
-        {% assign img_class = "h-24 md:h-32" %}
-      {% when "gold" %}
-        {% assign gap_class = "gap-6" %}
-        {% assign img_class = "h-16 md:h-24" %}
-      {% else %}
-        {% assign gap_class = "gap-4" %}
-        {% assign img_class = "h-12 md:h-16" %}
-    {% endcase %}
-
-    <div class="{% if tier != 'bronze' %}mb-12{% endif %}">
-      <h3 class="text-center text-sm uppercase tracking-wide text-[var(--color-text-muted)] mb-6">{{ tier | capitalize }} Sponsors</h3>
-      <div class="flex flex-wrap justify-center items-center {{ gap_class }}">
-        {% for sponsor in tier_sponsors %}
-          {% if tier == "bronze" %}
-          <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="block px-4 py-2 bg-[var(--color-surface)] rounded-lg hover:bg-[var(--color-border)] transition-colors">
-            <span class="text-sm font-medium">{{ sponsor.name }}</span>
-          </a>
-          {% else %}
-          <a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="group block">
-            <img
-              src="{{ sponsor.logo | default: '/assets/images/placeholder.svg' | relative_url }}"
-              alt="{{ sponsor.name }}"
-              class="{{ img_class }} w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100"
-              loading="lazy"
-            >
-          </a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </div>
-  {% endif %}
+{% assign tier_sponsors = site.data.sponsors | where: "tier", tier %}
+{% if tier_sponsors.size > 0 %}
+{% case tier %}
+{% when "platinum" %}{% assign gap_class = "gap-8" %}{% assign img_class = "h-24 md:h-32" %}
+{% when "gold" %}{% assign gap_class = "gap-6" %}{% assign img_class = "h-16 md:h-24" %}
+{% else %}{% assign gap_class = "gap-4" %}{% assign img_class = "h-12 md:h-16" %}
+{% endcase %}
+<div class="{% unless tier == 'bronze' %}mb-12{% endunless %}">
+<h3 class="text-center text-sm uppercase tracking-wide text-[var(--color-text-muted)] mb-6">{{ tier | capitalize }} Sponsors</h3>
+<div class="flex flex-wrap justify-center items-center {{ gap_class }}">
+{% for sponsor in tier_sponsors %}
+{% if tier == "bronze" %}
+<a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="block px-4 py-2 bg-[var(--color-surface)] rounded-lg hover:bg-[var(--color-border)] transition-colors">
+<span class="text-sm font-medium">{{ sponsor.name }}</span>
+</a>
+{% else %}
+<a href="{{ sponsor.url }}" target="_blank" rel="noopener" class="group block">
+<img src="{{ sponsor.logo | default: '/assets/images/placeholder.svg' | relative_url }}" alt="{{ sponsor.name }}" class="{{ img_class }} w-auto object-contain grayscale hover:grayscale-0 transition-all opacity-80 hover:opacity-100" loading="lazy">
+</a>
+{% endif %}
+{% endfor %}
+</div>
+</div>
+{% endif %}
 {% endfor %}

@@ -11,6 +11,7 @@ site:
   program: "FTC"  # FTC or FRC
   current_season: "2025-2026"
   logo: "/assets/images/placeholder.svg"
+  # hero_image: "/assets/images/hero.jpg"  # Optional: replaces the hero gradient with a photo
 
 # Theme configuration - Official FTC Colors
 # Edit colors here. Changes take effect after restarting Jekyll (no CSS rebuild needed).
@@ -46,7 +47,7 @@ features:
   code_links: true
   data_visualizations: true
   alumni_auto_archive: true
-  accessibility_toggle: true
+  accessibility_toggle: false
   search: true
 
 # Navigation

@@ -22,8 +22,8 @@
   --color-sponsor-gold: #eab308;
   --color-sponsor-silver: #d1d5db;
   --color-sponsor-bronze: #92400e;
-  --color-link: #003974;
-  --color-link-hover: #002855;
+  --color-link: var(--color-primary);
+  --color-link-hover: var(--color-primary-highlight);
 
   /* Light mode surfaces */
   --color-background: #ffffff;
