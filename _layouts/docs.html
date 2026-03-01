@@ -37,14 +37,14 @@ layout: default
     <article class="p-6 lg:p-12 max-w-4xl">
       <!-- Breadcrumb -->
       <nav class="mb-6 text-sm">
-        <ol class="flex items-center gap-2 text-[var(--color-text-muted)]">
-          <li><a href="{{ '/docs/' | relative_url }}" class="hover:text-primary">Docs</a></li>
+        <ol class="flex items-center gap-2 list-none pl-0 mb-0 text-[var(--color-text-muted)]">
+          <li class="mb-0"><a href="{{ '/docs/' | relative_url }}" class="hover:text-primary">Docs</a></li>
           {% if page.parent %}
-          <li>/</li>
-          <li><a href="{{ page.parent_url | relative_url }}" class="hover:text-primary">{{ page.parent }}</a></li>
+          <li class="mb-0">/</li>
+          <li class="mb-0">{% if page.parent_url %}<a href="{{ page.parent_url | relative_url }}" class="hover:text-primary">{{ page.parent }}</a>{% else %}<span>{{ page.parent }}</span>{% endif %}</li>
           {% endif %}
-          <li>/</li>
-          <li class="text-[var(--color-text)]">{{ page.title }}</li>
+          <li class="mb-0">/</li>
+          <li class="mb-0 text-[var(--color-text)]">{{ page.title }}</li>
         </ol>
       </nav>
 

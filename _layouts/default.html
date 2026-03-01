@@ -31,9 +31,13 @@
       --color-link-hover: {{ site.theme.colors.primary_highlight }};
     }
   </style>
+  <meta name="theme-color" content="{{ site.theme.colors.primary | default: '#003974' }}">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}" sizes="32x32">
+  <link rel="apple-touch-icon" href="{{ site.site.logo | default: '/assets/images/placeholder.svg' | relative_url }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Inter:wght@400;500;600;700&display=swap"></noscript>
 
   <script>
     // Check for dark mode preference
@@ -58,7 +62,7 @@
 
   {% include footer.html %}
 
-  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
 
   {% if site.startup_wizard %}
   <script>

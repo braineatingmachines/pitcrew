@@ -29,8 +29,8 @@
     </div>
   </div>
 
-  <!-- Decorative Elements -->
-  <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary-glow rounded-full blur-3xl"></div>
-  <div class="absolute -top-20 -left-20 w-80 h-80 bg-white/5 rounded-full blur-3xl"></div>
-  <div class="absolute bottom-2 left-0 right-0 h-24 bg-gradient-to-t from-[var(--color-background)] to-transparent"></div>
+  <!-- Decorative Elements (hidden on mobile to reduce paint cost) -->
+  <div class="absolute -bottom-10 -right-10 w-64 h-64 bg-secondary-glow rounded-full blur-2xl hidden md:block" aria-hidden="true"></div>
+  <div class="absolute -top-20 -left-20 w-80 h-80 bg-white/5 rounded-full blur-2xl hidden md:block" aria-hidden="true"></div>
+  <div class="absolute bottom-2 left-0 right-0 h-24 bg-gradient-to-t from-[var(--color-background)] to-transparent" aria-hidden="true"></div>
 </section>

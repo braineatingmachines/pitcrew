@@ -28,10 +28,10 @@ layout: default
   <nav class="sticky top-16 z-40 bg-[var(--color-background)] border-b border-[var(--color-border)]">
     <div class="container">
       <div class="flex overflow-x-auto gap-4 py-4">
-        <a href="#robot" class="nav-link whitespace-nowrap">Robot</a>
-        <a href="#team" class="nav-link whitespace-nowrap">Team</a>
-        <a href="#outreach" class="nav-link whitespace-nowrap">Outreach</a>
-        <a href="#gallery" class="nav-link whitespace-nowrap">Gallery</a>
+        {% unless page.hide_robot %}<a href="#robot" class="nav-link whitespace-nowrap">Robot</a>{% endunless %}
+        {% unless page.hide_team %}<a href="#team" class="nav-link whitespace-nowrap">Team</a>{% endunless %}
+        {% unless page.hide_outreach %}<a href="#outreach" class="nav-link whitespace-nowrap">Outreach</a>{% endunless %}
+        {% unless page.hide_gallery %}<a href="#gallery" class="nav-link whitespace-nowrap">Gallery</a>{% endunless %}
         {% if site.features.code_links %}
         <a href="#code" class="nav-link whitespace-nowrap">Code</a>
         {% endif %}

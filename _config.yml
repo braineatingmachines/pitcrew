@@ -138,6 +138,8 @@ exclude:
   - package-lock.json
   - tailwind.config.js
   - README.md
+  - SPEC.md
+  - CLAUDE.md
   - scripts
   - "*.py"
   - requirements.txt

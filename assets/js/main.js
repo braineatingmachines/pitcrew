@@ -1,5 +1,5 @@
 /**
- * Main JavaScript for Robo-Folio
+ * Main JavaScript for PitCrew
  * FTC/FRC Robotics Team Portfolio Template
  */
 
@@ -33,23 +33,42 @@ function openMobileMenu() {
   mobileMenu?.classList.remove('hidden');
   mobileMenu?.classList.add('flex');
   document.body.style.overflow = 'hidden';
+  mobileMenuButton?.setAttribute('aria-expanded', 'true');
+  mobileMenu?.querySelector('a, button')?.focus();
 }
 
 function closeMobileMenu() {
   mobileMenu?.classList.add('hidden');
   mobileMenu?.classList.remove('flex');
   document.body.style.overflow = '';
+  mobileMenuButton?.setAttribute('aria-expanded', 'false');
+  mobileMenuButton?.focus();
 }
 
 mobileMenuButton?.addEventListener('click', openMobileMenu);
 mobileMenuClose?.addEventListener('click', closeMobileMenu);
 mobileMenuBackdrop?.addEventListener('click', closeMobileMenu);
 
-// Close mobile menu on escape key
+// Keyboard: Escape closes overlays, arrows navigate lightbox, Tab traps focus in mobile menu
 document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape') {
     closeMobileMenu();
     closeLightbox();
+  }
+  if (lightbox && !lightbox.classList.contains('hidden')) {
+    if (e.key === 'ArrowRight') nextImage();
+    if (e.key === 'ArrowLeft') prevImage();
+  }
+  if (mobileMenu && !mobileMenu.classList.contains('hidden') && e.key === 'Tab') {
+    const focusable = [...mobileMenu.querySelectorAll('a, button, [tabindex]:not([tabindex="-1"])')];
+    if (!focusable.length) return;
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+    if (e.shiftKey) {
+      if (document.activeElement === first) { e.preventDefault(); last.focus(); }
+    } else {
+      if (document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
   }
 });
 
@@ -115,14 +134,6 @@ galleryItems.forEach((item, index) => {
 lightboxClose?.addEventListener('click', closeLightbox);
 lightboxPrev?.addEventListener('click', prevImage);
 lightboxNext?.addEventListener('click', nextImage);
-
-// Keyboard navigation for lightbox
-document.addEventListener('keydown', (e) => {
-  if (!lightbox?.classList.contains('hidden')) {
-    if (e.key === 'ArrowRight') nextImage();
-    if (e.key === 'ArrowLeft') prevImage();
-  }
-});
 
 // Table of Contents generation for docs
 const tocContainer = document.getElementById('toc');
@@ -239,4 +250,4 @@ if (localStorage.getItem('largeText') === 'true') {
   if (largeTextToggle) largeTextToggle.checked = true;
 }
 
-console.log('Robo-Folio initialized');
+// PitCrew ready
