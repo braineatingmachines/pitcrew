@@ -434,7 +434,8 @@ function renderIdentity() {
     ${fld('Current Season', 'id-season', s.current_season, 'text', 'placeholder="e.g. 2025-2026"')}
     ${fld('Logo Path', 'id-logo', s.logo, 'text', 'placeholder="/assets/images/logo.png"')}
   </div>
-  ${fld('Hero Background Image', 'id-hero', s.hero_image || '', 'text', 'placeholder="/assets/images/hero.jpg — leave blank to use gradient"')}`;
+  ${fld('Hero Background Image', 'id-hero', s.hero_image || '', 'text', 'placeholder="/assets/images/hero.jpg — leave blank to use gradient"')}
+  <p style="margin-top:-0.5rem;font-size:0.8rem;color:var(--muted)">Recommended: 1920×600 px or wider, landscape. Leave blank to use the default color gradient.</p>`;
 }
 
 function renderColors() {
