@@ -1,87 +1,66 @@
-- name: Anya Sharma
-  role: Team Captain
-  grade: 12
-  graduation_year: 2026
-  bio: Passionate about strategic team management and ensuring the robot consistently meets competition goals. Led the team to state championship last year.
+- bio: Specializes in constructing robust mechanical designs and ensuring the robot's
+    structural integrity. Expert in 3D printing and CNC machining.
+  grade: 11
+  graduation_year: 2027
   image: /assets/images/placeholder.svg
-  skills:
-    - Leadership
-    - Strategic Planning
-    - Public Speaking
-
-- name: Marcus Chen
+  name: Marcus Chen
   role: Build Lead
+  skills:
+  - Fabrication
+  - 3D Printing
+  - Mechanical Design
+- bio: Develops sophisticated control algorithms and optimizes robot performance.
+    Created our award-winning autonomous routines.
   grade: 11
   graduation_year: 2027
-  bio: Specializes in constructing robust mechanical designs and ensuring the robot's structural integrity. Expert in 3D printing and CNC machining.
   image: /assets/images/placeholder.svg
-  skills:
-    - Fabrication
-    - 3D Printing
-    - Mechanical Design
-
-- name: Sofia Rodriguez
+  name: Sofia Rodriguez
   role: Programming Lead
-  grade: 11
-  graduation_year: 2027
-  bio: Develops sophisticated control algorithms and optimizes robot performance. Created our award-winning autonomous routines.
-  image: /assets/images/placeholder.svg
   skills:
-    - Java
-    - Python
-    - Computer Vision
-
-- name: James Wilson
+  - Java
+  - Python
+  - Computer Vision
+- bio: Designs and implements electrical systems with a focus on efficient power distribution
+    and sensor integration.
+  grade: 10
+  graduation_year: 2028
+  image: /assets/images/placeholder.svg
+  name: James Wilson
   role: Electrical Lead
-  grade: 10
-  graduation_year: 2028
-  bio: Designs and implements electrical systems with a focus on efficient power distribution and sensor integration.
-  image: /assets/images/placeholder.svg
   skills:
-    - Wiring
-    - Circuit Design
-    - Sensors
-
-- name: Emily Foster
-  role: Outreach Lead
+  - Wiring
+  - Circuit Design
+  - Sensors
+- bio: Leads community engagement efforts and manages sponsorship relationships. Coordinates
+    all STEM outreach events.
   grade: 11
   graduation_year: 2027
-  bio: Leads community engagement efforts and manages sponsorship relationships. Coordinates all STEM outreach events.
   image: /assets/images/placeholder.svg
+  name: Emily Foster
+  role: Outreach Lead
   skills:
-    - Event Planning
-    - Social Media
-    - Marketing
-
-- name: Ryan Park
-  role: Driver
+  - Event Planning
+  - Social Media
+  - Marketing
+- bio: Primary robot operator with exceptional hand-eye coordination. Practices daily
+    to ensure precise control during matches.
   grade: 10
   graduation_year: 2028
-  bio: Primary robot operator with exceptional hand-eye coordination. Practices daily to ensure precise control during matches.
   image: /assets/images/placeholder.svg
+  name: Ryan Park
+  role: Driver
   skills:
-    - Precision Control
-    - Quick Thinking
-    - Strategy
-
-- name: Grace Kim
-  role: CAD Lead
-  grade: 12
-  graduation_year: 2026
-  bio: Creates detailed 3D models and technical drawings. Manages version control for all design files.
-  image: /assets/images/placeholder.svg
-  skills:
-    - SolidWorks
-    - Onshape
-    - Technical Drawing
-
-- name: Alex Thompson
-  role: Member
+  - Precision Control
+  - Quick Thinking
+  - Strategy
+- bio: Eager first-year member learning all aspects of robotics. Shows exceptional
+    promise in programming and mechanical work.
   grade: 9
   graduation_year: 2029
-  bio: Eager first-year member learning all aspects of robotics. Shows exceptional promise in programming and mechanical work.
   image: /assets/images/placeholder.svg
+  name: Alex Thompson
+  role: Member
   skills:
-    - Problem Solving
-    - Teamwork
-    - Electronics
+  - Problem Solving
+  - Teamwork
+  - Electronics

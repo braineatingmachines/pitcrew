@@ -1,57 +1,62 @@
-# Team alumni - Members who have graduated
-# Automatically populated by the alumni archival workflow
-
-- name: David Lee
-  role: Former Strategy Lead
+- bio: Led match strategy for three seasons and developed our scouting database system.
   graduation_year: 2025
-  seasons:
-    - 2024-2025
-    - 2023-2024
-    - 2022-2023
+  image: /assets/images/placeholder.svg
+  name: David Lee
   now: Studying Computer Science at MIT
-  bio: Led match strategy for three seasons and developed our scouting database system.
-  image: /assets/images/placeholder.svg
-
-- name: Hannah Brown
-  role: Former Documentation Lead
+  role: Former Strategy Lead
+  seasons:
+  - 2024-2025
+  - 2023-2024
+  - 2022-2023
+- bio: Created our award-winning engineering notebook template and documentation process.
   graduation_year: 2025
-  seasons:
-    - 2024-2025
-    - 2023-2024
+  image: /assets/images/placeholder.svg
+  name: Hannah Brown
   now: Studying Mechanical Engineering at Georgia Tech
-  bio: Created our award-winning engineering notebook template and documentation process.
-  image: /assets/images/placeholder.svg
-
-- name: Kevin Zhang
-  role: Former Programming Lead
-  graduation_year: 2024
+  role: Former Documentation Lead
   seasons:
-    - 2023-2024
-    - 2022-2023
-    - 2021-2022
+  - 2024-2025
+  - 2023-2024
+- bio: Pioneered our computer vision system and autonomous frameworks.
+  graduation_year: 2024
+  image: /assets/images/placeholder.svg
+  name: Kevin Zhang
   now: Software Engineering Intern at Google, Stanford University
-  bio: Pioneered our computer vision system and autonomous frameworks.
-  image: /assets/images/placeholder.svg
-
-- name: Michelle Torres
-  role: Former Team Captain
+  role: Former Programming Lead
+  seasons:
+  - 2023-2024
+  - 2022-2023
+  - 2021-2022
+- bio: Four-year team member who led the team to its first state championship appearance.
   graduation_year: 2024
-  seasons:
-    - 2023-2024
-    - 2022-2023
-    - 2021-2022
-    - 2020-2021
+  image: /assets/images/placeholder.svg
+  name: Michelle Torres
   now: Studying Biomedical Engineering at Johns Hopkins University
-  bio: Four-year team member who led the team to its first state championship appearance.
-  image: /assets/images/placeholder.svg
-
-- name: Jason Miller
-  role: Former Build Lead
-  graduation_year: 2023
+  role: Former Team Captain
   seasons:
-    - 2022-2023
-    - 2021-2022
-    - 2020-2021
-  now: Manufacturing Engineer at Tesla
-  bio: Master fabricator who taught countless students machining skills.
+  - 2023-2024
+  - 2022-2023
+  - 2021-2022
+  - 2020-2021
+- bio: Master fabricator who taught countless students machining skills.
+  graduation_year: 2023
   image: /assets/images/placeholder.svg
+  name: Jason Miller
+  now: Manufacturing Engineer at Tesla
+  role: Former Build Lead
+  seasons:
+  - 2022-2023
+  - 2021-2022
+  - 2020-2021
+- graduation_year: 2026
+  image: /assets/images/placeholder.svg
+  name: Anya Sharma
+  role: Former Team Captain
+  seasons:
+  - 2025-2026
+- graduation_year: 2026
+  image: /assets/images/placeholder.svg
+  name: Grace Kim
+  role: Former CAD Lead
+  seasons:
+  - 2025-2026
